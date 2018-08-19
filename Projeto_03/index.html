@@ -10,14 +10,14 @@
     <meta name="description" content="">
     <meta name="author" content="Lucas">
     <meta name="keywords">
-    
+    <script src="js/jquery-3.3.1.min.js"></script>
     <!-- <script src="main.js"></script> -->
 </head>
 <body>
 
     <header>
         <div class="container">
-            <div class="logo">LOGO</div>
+            <div class="logo"></div>
             <nav class="desktop-menu">
                 <ul>
                     <li><a href="">Home</a></li>
@@ -38,8 +38,8 @@
             <div class="clear"></div>
 
             <div class="chamada1">
-                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae, eos obcaecati ea?</p>
+                <h2>Lorem ipsum dolor sit amet<br> consectetur adipisicing elit.</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam molestiae, eos obcaecati eaamet consectetur adipisicing elit. In dignissimos rem esse illum ipsam magnam amet molestias unde?</p>
             </div>
         </div><!--container-->
     </header>
@@ -62,5 +62,109 @@
             <div class="clear"></div>
         </div><!--container-->
     </section><!--sessao1-->
+    <div class="clear"></div>
+
+    <section class="sessao2">
+        <div class="container">
+            <h2>Lorem ipsum dolor sit amet .</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In dignissimos rem esse illum ipsam magnam amet molestias unde, deserunt modi consectetur quod magni quasi nulla reprehenderit provident atque minima error.</p>
+            <img src="images/mockup.jpg">
+        </div><!--container-->
+    </section><!--sessao2-->
+
+
+    <section class="sessao3">
+        <div class="part1">
+            <div class="wraper-part1">
+                <h2>Nosso time</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo exercitationem molestias accusantium accusamus eum placeat, praesentium dolorum voluptatum voluptatibus quisquam? Odio voluptate obcaecati enim dolore. Nihil natus laudantium tempora tempore.</p>
+            </div><!--wraper-part1-->
+        </div><!--part1-->
+
+        <div class="part2">
+            <div class="sobre-autor">
+                <div class="titulo-autor">
+                    <div class="wraper-titulo-autor">
+                        <h2>Lucas S. Wanderley</h2>
+                        <p>Estudante / Desenvolvedor</p>
+                    </div><!--wraper-titulo-autor-->
+                    <div class="img-autor"></div>
+                </div><!--titulo-autor-->
+                <div class="texto-autor">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorem eaque eum ab architecto repudiandae, fuga, dolorum adipisci animi voluptates veritatis doloribus debitis laudantium impedit delectus cum vitae in nostrum!</p>
+                </div><!--texto-autor-->
+            </div><!--sobre-autor-->
+
+            <div class="slider-bullets">
+                <span style="background-color: rgb(107, 104, 104)"></span>
+                <span></span>
+                <span></span>
+            </div><!--slide-bullets-->
+        </div><!--part2-->
+        <div class="clear"></div>
+    </section><!--sessao3-->
+
+
+    <section class="sessao4">
+        <div class="container">
+            <div class="form">
+                <h2>Entre em contato</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis sit hic dolorum alias nesciunt consectetur nonhic dolorum alias nesciunt consectetur non.</p>
+
+                <form action="">
+                    <input type="text" name="nome" placeholder="Nome*">
+                    <input type="text" name="email" placeholder="E-mail*">
+                    <textarea cols="1" rows="10" name="mensagem" placeholder="Mensagem*"></textarea>
+                    <div class="clear"></div>
+                    <div><input type="submit" value="Enviar"></div>
+                </form>
+
+            </div><!--form-->
+            
+            <div class="map-wraper">
+                <h2>Faça uma visita</h2>
+                <div class="map-wraper3">
+                    <div class="map-wraper2">
+                            <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCx8sh_HlLuleKqI2-ujHXj3P4jZfhnSUQ'></script><div class="map" id='gmap_canvas'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style> <a href='http://maps-generator.com/pt'>maps-generator.com</a><script type='text/javascript'>function init_map(){var myOptions = {zoom:15,center:new google.maps.LatLng(-7.0194608,-37.281949199999985),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-7.0194608,-37.281949199999985)});infowindow = new google.maps.InfoWindow({content:'<p style="color:black;text-align:left;font-weight:bold;">Meu Mapa</p><p style="color:black;text-align:left;">Rua Juvenal Lucio<br>58704230 Patos<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                    </div><!--map-wraper2-->
+                </div><!--map-wraper3-->
+            </div><!--map=wraper-->
+
+            <div class="clear"></div>
+        </div><!--container-->
+        <div class="clear"></div>
+    </section><!--sessao4-->
+
+    <footer>
+        <div class="container">
+            <div class="logo-footer"></div>
+            <p>&copy; Todos os direitos reservados</p>
+            <p>lucaswanderley4@gmail.com</p>
+            <div class="clear"></div>
+        </div><!--container-->
+    </footer>
+
+
+<script>
+        
+        // let menu = document.querySelector(".mobile-menu");
+        let menu = $(".mobile-menu");
+
+
+        menu.click(function(event){
+            
+            let ul = $('.mobile-menu ul');
+            ul.slideToggle(1000);
+            
+            // if(ul.style.display == "block"){
+            //     ul.style.display = 'none';
+            // }else{
+            //     ul.style.display = 'block';
+            // }
+            
+        });
+        
+    </script>
+
 </body>
 </html>
