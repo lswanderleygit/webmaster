@@ -1,0 +1,208 @@
+.nav-link{
+    margin: 0 15px;
+}
+
+/* .box-fix{
+    position: relative;
+    top: 50px;
+} */
+
+section.bg-top{
+    width: 100%;
+    min-height: 600px;
+    background-image: url('../images/bg1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.fix-zindex{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(50,50,50,0.7);
+    z-index: 1;
+}
+
+.texto-bg{
+    color: white;
+    margin-top: 140px;
+    padding: 40px 0;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+section.chamada{
+    padding-top: 8px;
+    padding-bottom: 1px;
+    color: white;
+    background: rgb(125, 157, 175);
+}
+
+section.chamada h2{
+    font-size: 33px;
+}
+
+/* section sobre */
+
+section.sobre{
+    padding: 30px 0;
+    background: #EDEDED;
+}
+
+.custom-title{
+    position: relative;
+    
+}
+
+.custom-title h2{
+    position: relative;
+    color: #888;
+    font-size: 25px;
+
+}
+
+.custom-title div{
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background: rgb(125, 157, 175);
+    top: 15px;
+    left: 80px;
+}
+
+/* Section diferenciais */
+
+section.diferenciais{
+    padding: 30px 0;
+    color: #646464;
+}
+
+section.diferenciais h2{
+    border-bottom: 1px solid rgb(117, 106, 106);
+    padding-bottom: 10px;
+}
+
+section.diferenciais .col-md-4{
+    padding: 0 20px;
+}
+
+
+/* section convite */
+
+section.convite{
+    padding: 30px 0;
+    background: #9ABFE2;
+}
+
+section.convite h2{
+    font-size: 28px;
+    color: white;;
+    /* color: white; */
+}
+
+section.convite .col-md-6{
+    margin-top: 15px;
+}
+
+
+section.convite input[type=email]{
+    width: calc(100% - 130px);
+    height: 40px;
+    padding-left: 8px;
+}
+
+section.convite button{
+    position: relative;
+    width: 80px;
+    height: 40px !important;
+    line-height: 20px;
+    vertical-align: top;
+}
+
+/* section contato */
+
+section.contato{
+    padding: 30px 0;
+    background: #EDEDED;
+}
+
+section.contato .custom-title div{
+    left: 155px;
+}
+
+section.contato .custom-title{
+    padding-bottom: 15px;
+}
+
+/* section footer */
+
+footer{
+    color: white;
+}
+
+footer .bg{
+    background: #787878;
+    padding: 30px;
+}
+
+footer ul{
+    list-style-type: none;
+    list-style-position: inside;
+    padding: 0;
+    margin: 0;
+}
+
+.group-btn i{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+footer li{
+    text-decoration: none;
+}
+
+footer li a{
+    color: white;
+}
+
+footer li a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+footer .bg-2{
+    background: #4F4F4F;
+}
+
+/* botões */
+
+button[type=submit], button[type=button], input:focus{
+    /* background: #17a2b8; */
+    /* max-width: 120px; */
+    box-shadow: 0 0 0 0 !important;
+    border: 0 !important;
+    outline: 0 !important;
+}
+
+input[type=email]{
+    border: 2px solid #ccc !important;
+}
+
+button:hover{
+    background-color: #627c8b !important;
+}
+
+button{
+    background: #7d9daf !important;
+}
