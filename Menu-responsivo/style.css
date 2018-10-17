@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    max-width: 1280px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #1273d6;
+    height: 60px;
+    padding: 10px 0;
+    color: white;
+    /* line-height: 35px; */
+}
+
+.logo{
+    float: left;
+}
+
+/* Estilo para o menu desktop */
+
+nav.menu-desktop{
+    float: right;
+    position: relative;
+    top: 7px;
+}
+
+nav.menu-desktop ul{
+    list-style-type: none;
+}
+
+nav.menu-desktop > ul > li{
+    position: relative;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav.menu-desktop a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu-desktop a:hover{
+    border-bottom: 2px solid white;
+}
+
+nav.menu-desktop > ul li:hover .submenu-desktop{
+    display: block;
+}
+
+ul.submenu-desktop{
+    position: absolute;
+    width: 100px;
+    padding: 8px 0;
+    background: #01579b;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+    display: none;
+    text-align: center;
+    height: auto;
+}
+
+/* dependendo de quantos itens do submenu adiciona nth-last-of-type */
+ul.submenu-desktop > li:nth-last-of-type(2), ul.submenu-desktop > li:nth-last-of-type(3){
+    padding-bottom: 5px;
+    border-bottom: 2px solid white;
+}
+
+/* Estilo para o menu mobile */
+
+nav.menu-mobile{
+    display: none;
+    float: right;
+}
+
+nav.menu-mobile i{
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+nav.menu-mobile > ul{
+    list-style-type: none;
+    width: 100%;
+    background: #1273d6;
+    position: absolute;
+    left: 0;
+    top: 62px;
+    text-align: center;
+    font-size: 25px;
+    display: none;
+}
+
+nav.menu-mobile > ul > li{
+    border-bottom: 2px solid white;
+    padding: 10px 0;
+}
+
+nav.menu-mobile > ul > li > ul.submenu-mobile li a{
+    font-size: 18px;
+}
+nav.menu-mobile > ul > li > ul.submenu-mobile li i{
+    font-size: 17px;
+    padding-right: 5px;
+}
+nav.menu-mobile > ul > li > ul.submenu-mobile li a:hover{
+    border-bottom: 2px solid white;
+}
+
+nav.menu-mobile ul li a{
+    text-decoration: none;
+    color: white;
+    /* border-bottom: 2px solid white; */
+}
+
+ul.submenu-mobile{
+    display: none;
+    padding: 15px 0;
+}
+
+nav.menu-mobile > ul > li > a:hover{
+    padding: 20px;
+}
+
+nav.menu-mobile > ul > li > ul.submenu-mobile{
+    padding: 5px 0;
+}
+
+nav.menu-mobile > ul > li:hover ul.submenu-mobile{
+    display: block;
+}
+
+nav.menu-mobile > ul > li:hover .linha{
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 2px;
+    margin-top: 5px;
+}
+
+
+@media screen and (max-width: 768px){
+
+    nav.menu-desktop{
+        display: none;
+    }
+
+    nav.menu-mobile{
+        display: block;
+    }
+}
+
+    
+
+
+
+
